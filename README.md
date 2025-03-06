@@ -31,7 +31,7 @@ Installation & Setup
 
 1. Clone the Repository
 
-git clone https://github.com/ArthSawatkar/digital-wallet.git
+git clone https://github.com/ArthSawatkar/mern-wallet.git
 cd digital-wallet
 
 2. Install Dependencies
