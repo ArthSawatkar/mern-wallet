@@ -1,92 +1,80 @@
-Digital Payment Wallet (Paytm Clone)
+Digital Payment Wallet (MERN Stack) – EY GDS NextGen Internship Project
 
-This is a digital payment wallet application built with the MERN stack (MongoDB, Express, React, Node.js). It is designed to simulate a Paytm-like wallet system where users can register, log in, view their wallet balance, and perform transactions (credit/debit).
+A secure and user-friendly digital payment wallet, inspired by Paytm, built using the MERN stack. This project is designed to provide seamless transactions, secure authentication, and an intuitive UI.
 
 Features
-User Authentication: Secure registration and login using JWT-based authentication.
-Wallet Balance: Users can view their current wallet balance.
-Transaction Management: Users can perform credit and debit transactions with real-time updates to their wallet balance.
-Secure API: All sensitive routes (transactions, balance view) are protected with JWT authentication.
+
+✅ User Authentication: Secure login/signup using JWT & bcrypt.js
+✅ Wallet Balance Management: Users can check and manage their balance
+✅ Transaction Processing: Secure peer-to-peer payments (Upcoming)
+✅ User Profile & Dashboard: Clean, modern UI inspired by MongoDB Atlas
+✅ Transaction History: View past transactions (Planned)
+✅ Secure Storage: Profile images stored on Cloudinary
+✅ Mobile Responsive Design
+
+Tech Stack
+
+Frontend: React.js, Tailwind CSS (or Bootstrap), Redux (Planned)
+
+Backend: Node.js, Express.js
+
+Database: MongoDB (MongoDB Atlas)
+
+Authentication: JWT, bcrypt.js
+
+File Storage: Cloudinary
+
+Hosting (Planned): Render/Vercel for frontend, Railway for backend
 
 
-Technologies Used
-Frontend: React.js, HTML, CSS, JavaScript
-Backend: Node.js, Express.js, MongoDB, JWT for user authentication
-Database: MongoDB (using MongoDB Atlas for cloud storage)
-Environment Variables: Sensitive information such as MongoDB URI and JWT Secret Key are stored securely in a .env file.
+Installation & Setup
 
-
-Setup Instructions
 1. Clone the Repository
-Clone the project repository to your local machine using the following command:
-git clone https://github.com/ArthSawatkar/mern-wallet.git
 
-3. Install Dependencies
-Backend
-Navigate to the server directory and install the required dependencies:
+git clone https://github.com/ArthSawatkar/digital-wallet.git
+cd digital-wallet
 
-cd server
+2. Install Dependencies
+
+Backend Setup
+
+cd backend
 npm install
 
-Frontend (Optional, if applicable)
-If you're working with the frontend, navigate to the client directory and install the dependencies there as well:
+Create a .env file in the backend directory with:
 
-cd client
-npm install
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+CLOUDINARY_API_KEY=your_api_key
 
-3. Configure Environment Variables
-Create a .env file in the server directory and add the following configurations:
-
-MONGO_URI=
-JWT_SECRET=
-PORT=5000
-
-Replace your_mongo_db_connection_string with your MongoDB Atlas connection URI and your_jwt_secret_key with a secret key used to sign JWT tokens.
-
-4. Run the Application
-Backend
 Start the backend server:
 
-cd server
+npm run dev
+
+Frontend Setup
+
+cd frontend
+npm install
 npm start
 
-The backend will run at http://localhost:5000.
-
-Frontend (If applicable)
-To start the frontend, run:
-
-cd client
-npm start
-
-The frontend React app will run at http://localhost:3000.
 
 
-API Endpoints
+Upcoming Features
 
-POST /register: Register a new user with the following body parameters:
-name: User's full name
-email: User's email address
-password: User's password
+✔️ Watermarked Transactions
 
-POST /login: Login a user by sending the email and password to receive a JWT token.
+✔️ GitHub & LinkedIn Profile Linking
 
-GET /balance: Fetch the user's current wallet balance (Protected route, requires JWT token).
+✔️ Transaction History
 
-POST /transactions: Perform a credit/debit transaction with the following body parameters:
-
-amount: The amount to credit/debit
-type: credit or debit (Protected route, requires JWT token).
+✔️ UI Enhancements
 
 
 Contributing
-Fork the repository.
-Create a new branch (git checkout -b feature-branch).
-Commit your changes (git commit -am 'Add feature').
-Push to the branch (git push origin feature-branch).
-Create a Pull Request with a description of the changes.
 
----
+Feel free to fork this repository and suggest improvements!
 
 Contact
-For any queries or suggestions, feel free to reach out:
-https://in.linkedin.com/in/arthsawatkar
+
+For queries or collaborations, reach out to me via LinkedIn or Email.
+
